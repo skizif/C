@@ -4,7 +4,7 @@
 
 void sort(int a[], int size)
 {	
-	int sorted = 0, i = 0, j = 0, tmp = 0, flag = 1;
+	int sorted = 0, i = 0, tmp = 0, flag = 1;
 	while (!sorted) {
 		while (i < (size - 1)) {
 			if (a[i] <= a[i+1]) { flag = 0;}
@@ -18,8 +18,8 @@ void sort(int a[], int size)
 		            i = 0;
 		} else { 
 			sorted = 1;
-			for (j; j < (size - 1); j++) {
-				printf("%d ", a[j]);
+			for (i = 0; i < (size - 1); i++) {
+				printf("%d ", a[i]);
 			}
 		}
 	}
